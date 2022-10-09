@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+
+body {
+  font: 18px "Nuntio", sans-serif;
+  /* color: #343a40; */
+  color: black;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(bg2.jpg); */
+  /* background: linear-gradient(#ebfbee, #2b8a3e); */
+  background: radial-gradient(#2b8a3e, #ebfbee);
+  opacity: 1;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.profile-card::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+  /* background: linear-gradient(#197507, #d1f7c6) no-repeat center; */
+  /* background: linear-gradient(#d2a11e, #e13d4c) no-repeat center; */
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
+  /* backdrop-filter: blur(100px); */
+  filter: blur(10px);
+  /* -webkit-filter: blur(8px); */
+  /* background: url(background.jpg) no-repeat center; */
+  /* 
+  background-size: cover; */
+  /* animation: backgroundZoomAnimate 20s forwards; */
+}
+
+/* @keyframes backgroundZoomAnimate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+} */
+
+.profile-card {
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
+  width: 600px;
+  position: relative;
+
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff40;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+img {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 10px 60px -10px black;
+}
+
+.profile-card__desk {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile-card__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  gap: 50px;
+}
+
+.num {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+/* .profile-card__info div:last-child {
+  font-size: 16px;
+  opacity: 0.7;
+} */
+
+.profile-card__social {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.profile-card__social a {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  margin: 15px;
+  border-radius: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 9px;
+}
+
+.instagram:link,
+.instagram:visited {
+  /* color: white; */
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.instagram:hover,
+.instagram:active {
+  color: #cc2366;
+  background: black;
+}
+
+.snapchat {
+  background: linear-gradient(45deg, #fffc3b, #fffc00);
+}
+.snapchat:hover,
+.snapchat:active {
+  color: #fffc00;
+  background: black;
+}
+
+.twitter {
+  background: linear-gradient(
+    45deg,
+    #66757f 0%,
+    #00acee 25%,
+    #36d8ff 75%,
+    #f5f8fa 95%,
+    #fff 100%
+  );
+}
+
+.twitter:hover,
+.twitter:active {
+  color: #36d8ff;
+  background: black;
+}
+
+.github {
+  color: white;
+  /* background: linear-gradient(45deg, black 0%, #f5f8fa 95%); */
+  background: black;
+}
+.github:hover,
+.github:active {
+  color: black;
+  background: gainsboro;
+}
+
+.linked-in {
+  background: linear-gradient(45deg, #0077b5, #00a0dc);
+}
+.linked-in:hover,
+.linked-in:active {
+  color: #0077b5;
+  background: black;
+}
+
+.p-icon:hover,
+.p-icon:active {
+  box-shadow: 0 18px 200px -60px black;
+}
